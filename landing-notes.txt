@@ -1,0 +1,11 @@
+1. Keuntungan memisahkan header dan footer menjadi component:
+Kode tidak perlu ditulis berulang di setiap halaman, sehingga file lebih pendek
+dan rapi. Kalau ada perubahan (misalnya menu atau logo), cukup mengubah satu file
+dan semua halaman ikut berubah. Ini juga mengurangi risiko salah ketik atau
+halaman yang tampilannya tidak seragam. Kode lebih mudah dibaca dan dirawat.
+
+2. Bagian halaman admin yang punya masalah sama:
+Sidebar dan topbar. Markup keduanya disalin-tempel identik di 14 file halaman
+(Buku, Kategori, Penulis, Pengguna, Profil). Kalau ada menu baru, kita harus
+mengubah 14 file satu per satu. Selain itu, data berupa array mentah juga
+ditulis berulang di setiap halaman, bukan dari satu sumber.
