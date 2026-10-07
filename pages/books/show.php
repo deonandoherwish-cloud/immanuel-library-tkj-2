@@ -9,6 +9,7 @@
 <body>
   <?php
   require '../../repositories/book-repository.php';
+  $book = getBook();
   ?>
   <div class="app-shell">
   <?php require_once __DIR__ . '/../../components/admin/sidebar.php'; ?>
