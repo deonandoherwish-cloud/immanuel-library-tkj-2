@@ -1,3 +1,9 @@
+<?php
+require_once __DIR__ . '/../../repositories/user-repository.php';
+$user = getUser();
+$users = getUsers();
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -7,14 +13,6 @@
   <link rel="stylesheet" href="../../styles/users/edit.css">
 </head>
 <body>
-  <?php
-  $user = [
-      "id"    => 2,
-      "name"  => "Budi Santoso",
-      "email" => "budi.santoso@siswa.ski.sch.id",
-      "role"  => "member",
-  ];
-  ?>
   <div class="app-shell">
   <?php require_once __DIR__ . '/../../components/admin/sidebar.php'; ?>
 
