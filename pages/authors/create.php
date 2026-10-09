@@ -1,3 +1,10 @@
+<?php
+require_once __DIR__ . '/../../repositories/author-repository.php';
+$authors = getAuthors();
+$author = getAuthor();
+?>
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
