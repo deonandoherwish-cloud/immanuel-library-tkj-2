@@ -65,7 +65,7 @@ $users = getUsers();
                     <td>
                       <div class="cell-actions">
                         <a href="edit.php?id=<?= $user['id'] ?>" class="btn btn-outline btn-sm">Edit</a>
-                        <a href="../../actions/users/destroy.php?id=<?= $user['id'] ?>" class="btn btn-danger btn-sm">Hapus</a>
+                        <a href="../../actions/users/destroy.php?id=<?= $user['id'] ?>" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm">Hapus</a>
                       </div>
                     </td>
                   </tr>
