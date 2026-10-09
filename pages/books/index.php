@@ -1,3 +1,8 @@
+<?php
+  require_once __DIR__ . '/../../repositories/book-repository.php';
+  $books = getBooks();
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -9,16 +14,6 @@
 </head>
 
 <body>
-  <?php
-  $book = [
-    "id" => 1,
-    "title" => "Laskar Pelangi",
-    "category" => "Fiksi",
-    "year" => 2005,
-    "stock" => 12,
-    "authors" => "Andrea Hirata",
-  ];
-  ?>
   <div class="app-shell">
     <?php require_once __DIR__ . '/../../components/admin/sidebar.php'; ?>
 
