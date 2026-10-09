@@ -1,3 +1,9 @@
+<?php 
+ require_once __DIR__ . '/../../repositories/book-repository.php';
+  $books = getBooks();
+  $book = getBook();
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -51,7 +57,7 @@
                 <label for="category_id">Kategori</label>
                 <select id="category_id" name="category_id">
                   <?php foreach ($categories as $index => $category): ?>
-                    <option value="<?= $index + 1 ?>" <?= ($index + 1) === $book['category_id'] ? 'selected' : '' ?>><?= $category ?></option>
+                    <option value="<?= $index + 1 ?>" <?= ($index + 1) === $book['category'] ? 'selected' : '' ?>><?= $category ?></option>
                   <?php endforeach; ?>
                 </select>
               </div>
